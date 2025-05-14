@@ -16,7 +16,7 @@ export const Chart = styled.div`
 			img{width:100%;height:auto;}
 		}
 		.index{position:absolute;bottom:0;
-			&:before{content:'';display:block; height:100%;position:absolute;top:10%;left:50%;transform:translateX(-50%);
+			&:before{content:'';display:block; height:100%;position:absolute;top:1.6rem;left:50%;transform:translateX(-50%);
 			border-left:0.2rem dashed #4252E2;
 			}
 			
