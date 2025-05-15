@@ -118,14 +118,54 @@ const _ = () => {
 				name:'과학',
 				data: [25, 20, 40],
 				color: '#f6c25a'
-			}
+			},{
+				name:'미술',
+				data :[30, 50, 30],
+				color: '#E61356'
+			},
+			{
+				name:'역할놀이',
+				data: [20, 30, 20],
+				color: '#F77F16'
+			},
+			{
+				name:'과학',
+				data: [25, 20, 40],
+				color: '#06C289'
+			},{
+				name:'미술',
+				data :[30, 50, 30],
+				color: '#7F30B7'
+			},
+			{
+				name:'역할놀이',
+				data: [20, 30, 20],
+				color: '#0DBEF4'
+			},
+			{
+				name:'과학',
+				data: [25, 20, 40],
+				color: '#DC4D9E'
+			},
+			{
+				name:'과학',
+				data: [25, 20, 40],
+				color: '#62C91F'
+			},
 		]
 	});	
 
 	const [preferenceOption, setPreferenceOption] = useState([
 		{title:'미술', value:45.8, time:42, bg:'linear-gradient(90deg, rgba(66, 82, 226, 0.6) 0%, #4252E2 100%)', tagBg:'#4252E2'},
 		{title:'역할놀이', value:30, time:17, bg:'linear-gradient(90deg, rgba(0, 212, 212, 0.6) 0%, #00D4D4 100%)', tagBg:'#09D5D5'},
-		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(249, 183, 54, 0.6) 0%, #F9B736 100%)', tagBg:'#F8BA42'}
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(249, 183, 54, 0.6) 0%, #F9B736 100%)', tagBg:'#F8BA42'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(230, 19, 86, 0.6) 0%, #E61356 100%)', tagBg:'#E61356'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(247, 127, 22, 0.6) 0%, #F77F16 100%)', tagBg:'#F77F16'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(6, 194, 137, 0.6) 0%, #06C289 100%)', tagBg:'#06C289'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(127, 48, 183, 0.6) 0%, #7F30B7 100%)', tagBg:'#7F30B7'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(13, 190, 244, 0.6) 0%, #0DBEF4 100%)', tagBg:'#0DBEF4'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(220, 77, 158, 0.6) 0%, #DC4D9E 100%)', tagBg:'#DC4D9E'},
+		{title:'쌓기', value:60, time:15, bg:'linear-gradient(90deg, rgba(98, 201, 31, 0.6) 0%, #62C91F 100%)', tagBg:'#62C91F'},		
 	]);	
 
 	const [relationshipOption, setRelationshipOption] = useState([

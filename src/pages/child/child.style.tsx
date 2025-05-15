@@ -165,14 +165,15 @@ export const Contents = styled.div`
 
 	.echart{
 		overflow:hidden;
+		max-width:calc(100% + 6.8rem);
 		margin:0 -10%;
 		> *{height:calc(100% + 1rem);margin:-4rem 0 -3rem;}
 		svg{cursor: default;}
-		&.line-chart{}
+		* {max-width:100%;}
 	}
 
 	.chart-legend {
-		display: flex; justify-content: center; align-items: center; gap: 1.6rem;margin-top:2rem;
+		display: flex; justify-content: center; align-items: center; gap:0.8rem 1.6rem;margin-top:2rem; flex-wrap:wrap;
 
 		+ *{margin-top:3.2rem;}
 

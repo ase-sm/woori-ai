@@ -2,8 +2,7 @@ import styled from '@emotion/styled'
 
 export const Chart = styled.div`
 	position:relative;
-	&:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;background:#fff;height:7.3rem;}
-	.chart-draw{
+	 .chart-draw{
 		position:relative;
 		background: url("data:image/svg+xml,%3Csvg width='285' height='137' viewBox='0 0 285 137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L284.702 1.00002' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M0 35L284.702 35' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M1.12354 69H283.577' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M0.87207 103H283.829' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3C/svg%3E%0A") no-repeat 50% 100% !important;
 		background-size:auto 100% !important;
@@ -15,7 +14,7 @@ export const Chart = styled.div`
 		.bg{
 			img{width:100%;height:auto;}
 		}
-		.index{position:absolute;bottom:0;
+		.index{position:absolute;bottom:1.5rem;
 			&:before{content:'';display:block; height:100%;position:absolute;top:1.6rem;left:50%;transform:translateX(-50%);
 			border-left:0.2rem dashed #4252E2;
 			}
