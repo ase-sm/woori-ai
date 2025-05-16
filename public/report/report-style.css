@@ -202,7 +202,6 @@ br, hr{border:none;line-height:inherit;}
 .gage-bar-unit.st-both .gage-bar .gage-wrap .tag{top:initial;bottom:-7px;padding-top:0;height:77px;}
 .gage-bar-unit.st-both .gage-bar .gage-wrap .tag .dotline{display:block;margin:0 auto; width:22px;height:54px;background-size:100% auto;background-repeat:no-repeat;background-position:0 100%;}
 .gage-bar-unit.st-both .gage-bar .gage-wrap .tag span:first-child{margin-bottom:-6px;}
-.gage-bar-unit.st-both .gage-bar .gage-wrap .tag .dotline{}
 .gage-bar-unit.st-both .gage-bar .gage-wrap .tag:before{display:none;}
 .gage-bar-unit.st-both .gage-bar .gage-wrap .gage .bar{border-radius:0;width:100%;margin-left:0;}
 .gage-bar-unit.st-both .gage-bar .gage-wrap:first-child{text-align:right;}
@@ -218,7 +217,6 @@ br, hr{border:none;line-height:inherit;}
 .gage-bar-unit.st-thumb .thumb{position:absolute;top:18px;left:0; width:32px;min-width:32px; height:32px;overflow:hidden;}
 .gage-bar-unit.st-thumb .thumb img{object-fit: cover;width:100%;height:100%;}
 .gage-bar-unit.st-thumb .gage-bar-unit{ overflow:hidden;padding-left:42px;padding-top:3px;}
-.gage-bar-unit.st-thumb .gage-bar-unit .info{}
 .gage-bar-unit.st-thumb .gage-bar-unit .info .medal{float:left;margin-right:3px;position:relative;padding-left:18px;height:19px;}
 .gage-bar-unit.st-thumb .gage-bar-unit .info .medal [class*=ico-]{position: absolute;left:0;}
 .gage-bar-unit.st-thumb .gage-bar-unit .info .medal ~ .name,
