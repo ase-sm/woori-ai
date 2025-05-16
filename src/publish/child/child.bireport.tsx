@@ -1,5 +1,7 @@
 import { Button, Img, TabList, TabPanel, Tabs, Icon, Checkbox } from '@/entities'
 import { BarChart, LineChart, StandardDeviationChart, GageBarChart, DeviationChart, ThumbChart } from '@/features'
+import { PdfReport, PdfReport2, PdfReport3 } from './pdf'
+
 import { globalStore } from '@/shared'
 import { useEffect, useState } from 'react'
 
@@ -352,7 +354,7 @@ const _ = () => {
 											<div className='check-box'>
 												<Checkbox name='report' onChange={() => handleSingleCheck(0)} checked={checkItems[0]}>
 													활동성
-												</Checkbox>
+												</Checkbox> 
 											</div>
 											<p className='txt'>평균 활동성은 연령 평균에 비해 낮으나, 활동성 편차가 크게 나타납니다. 좋아하는 활동과 싫어하는 활동에 대한 선호도가 분명한 아동에게서 나타나는 특징입니다.</p>
 										</div>
@@ -681,6 +683,12 @@ const _ = () => {
 					<Button className='btn-type2 st1'>일지생성</Button>
 				</div>
 			</div>
+
+			<PdfReport />
+			<PdfReport3 />
+			<PdfReport2 />
+			
+			
 		</Contents>
 	)
 }
