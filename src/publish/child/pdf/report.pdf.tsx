@@ -85,14 +85,6 @@ const _ = () => {
             </div>
             <div className='data-table'>
               <table>
-                  <colgroup>
-                        <col style={{ width: 'auto' }} />
-                        <col style={{ width: '16%' }} />
-                        <col style={{ width: '16%' }} />
-                        <col style={{ width: '16%' }} />
-                        <col style={{ width: '16%' }} />
-                        <col style={{ width: '16%' }} />
-                      </colgroup>
                   <thead>
                     <tr>
                       <th>구분</th>
