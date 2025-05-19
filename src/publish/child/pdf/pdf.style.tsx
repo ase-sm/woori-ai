@@ -157,7 +157,10 @@ export const Contents = styled.div`
 	&:not(.st-both){transform:scale(0.7);width:calc(100% + 60px);margin-left:-30px;}
 	&:not(.st-both):not(.st-thumb) ~ .gage-bar-unit{margin-top:-20px;}
 	&.st-both{transform:scale(0.85);margin-top:-20px;
-		.x-axis{top:22px}
+		.gage-bar-wrap{padding-bottom:0;}
+		.x-axis{top:initial;position:relative;display:flex;justify-content:center;align-items:center;flex-direction: column;margin-top:10px;
+			&:before{transform: translateX(0);margin-bottom:5px;margin-left:-2px;}
+		}
 	}
 
 	&.st-thumb{transform:scale(0.7);margin-top:15px;
@@ -168,6 +171,7 @@ export const Contents = styled.div`
 .standard-deviation-chart{transform:scale(0.75);margin-top:-25px !important;}
 
 .chart-legend{gap:3px 10px;}
+.echart{margin:0;}
 .echart + .chart-legend{transform:scale(0.75);margin-top:0;}
 
  
