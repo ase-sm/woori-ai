@@ -21,7 +21,7 @@ return (
         <div className='thumb'>
           <Img src={ opt.src } alt='' />
         </div>
-        <div className='gage-bar-unit'>
+        <div className='gage-bar-unit-inner'>
           <div className='info'>
             {index < 3 ?
             <span className='medal'>

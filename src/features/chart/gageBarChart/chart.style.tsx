@@ -44,8 +44,8 @@ export const Chart = styled.div`
 }
 
 &.st-both {
-	padding-bottom: 0; padding-top: 7rem;
-
+	padding-bottom: 0 !important; padding-top: 7rem;
+	.gage-bar-wrap{padding-bottom:3rem;}
 	.gage-bar {
 		.gage-wrap {
 			float: left; width: 50%; height: 100%; position: relative;
@@ -58,7 +58,7 @@ export const Chart = styled.div`
 				&:before { display: none; }
 			}
 			.gage {
-				.bar { border-radius: 0; }
+				.bar { border-radius: 0; width:100%; margin-left:0;}
 			}
 			&:first-child {
 				text-align: right;
@@ -78,11 +78,11 @@ export const Chart = styled.div`
 	}
 }
 
-&.st-thumb{overflow:hidden;display:flex;align-items:center;width:100%;
- 	~ .st-thumb{margin-top:3.6rem;}
+&.st-thumb{overflow:hidden;display:flex;align-items:center;width:100%;gap:1.2rem;
+ 	~ .st-thumb{margin-top:3rem;}
 	.gage-bar-wrap{padding-bottom:0;}
-	.thumb.thumb {${Thumb}; width: 4rem; height: 4rem; }
-	.gage-bar-unit{flex:1; overflow:hidden;padding-left:1.2rem;
+	.thumb {${Thumb}; width: 4rem; height: 4rem; }
+	.gage-bar-unit-inner{flex:1; overflow:hidden;
 		.info{margin-bottom:0.6rem;
 			.medal{float:left;margin-right:0.4rem;
 				[class*=ico-]{float:left;}

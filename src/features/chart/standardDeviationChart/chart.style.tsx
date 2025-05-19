@@ -9,7 +9,7 @@ export const Chart = styled.div`
 		padding:0 1rem;
 		border-bottom:1px solid #D4D6E3;
 
-		.base{position:absolute;top:2%;left:50%;height:100%; transform:translateX(-50%);border-left:0.2rem dashed #979AB5;}
+		.base{position:absolute;top:2%;left:50%;bottom:0; transform:translateX(-50%);border-left:0.2rem dashed #979AB5;}
 
 		.bg{
 			img{width:100%;height:auto;}

@@ -7,7 +7,7 @@ const _ = ({value}: any) => {
 	lv = Math.floor(lv / 5) * 5;
 		
 	return <>
-	<Chart className="chart">
+	<Chart className="chart standard-deviation-chart">
 		<div className="chart-draw">
 			<div className="bg"><Img src={'/images/bg-standard-deviation-chart.png'} alt='' /> </div>
 			<div className={'index lv' + lv}><i></i><span className="label">{ value > 50 ? 100 - value : value }</span></div>

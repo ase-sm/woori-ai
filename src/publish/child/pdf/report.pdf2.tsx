@@ -6,7 +6,7 @@ const _ = () => {
 
 
 	return (
-		<Contents className='bi-reort-pdf-wrap' style={{width:'1000px', left:'0', top:'0'}}>
+		<Contents className='bi-reort-pdf-wrap' style={{width:'794px', left:'0', top:'0'}}>
 
   <div className="bi-reort-pdf-wrap">
     <div className="report-header">
@@ -16,7 +16,7 @@ const _ = () => {
 
     <div className="report-content">
       
-      <div className="section-box-wrap full">
+      <div className="section-box-wrap">
         <div className="section-box">
           <h2 className="section-tit">활동성</h2>
           <div className="noti-box min-h">
@@ -29,9 +29,7 @@ const _ = () => {
           
           <div className="chart-area">
             <h3 className="chart-tit">활동성</h3>
-            <div className="chart-area">
-              <DeviationChart value={[20, 30]} label={['-8.7', '+7.2']} />
-            </div>
+            <DeviationChart value={[20, 30]} label={['-8.7', '+7.2']} />
             <div className='data-table'>
               <table>
                   <colgroup>
@@ -123,7 +121,6 @@ const _ = () => {
             </div>
           </div>
         </div>
-        <div className="line"></div>
         <div className="section-box">
           <h2 className="section-tit">사회성</h2>
           <div className="noti-box min-h">
@@ -223,6 +220,11 @@ const _ = () => {
                   </tbody>
               </table>
             </div>
+          </div>
+          
+          <div className='no-data'>
+            <p className="txt">선생님과 부모님의 마음으로
+              <br />우리아이를 안전하게 지키겠습니다.</p>
           </div>
         </div>
       </div>
