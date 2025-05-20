@@ -164,6 +164,7 @@ export const Contents = styled.div`
 	}
 
 	&.st-thumb{transform:scale(0.7);margin-top:15px;
+		+ .st-thumb {margin-top:21px;}
 		.gage-bar-unit{margin-left:-20px;}
 	}
 }
@@ -171,8 +172,12 @@ export const Contents = styled.div`
 .standard-deviation-chart{transform:scale(0.75);margin-top:-25px !important;}
 
 .chart-legend{gap:3px 10px;}
-.echart{margin:0;}
-.echart + .chart-legend{transform:scale(0.75);margin-top:0;}
+.echart{margin:0;
+	&.bar-chart{
+		.echarts-for-react {height:270px !important;}
+	}
+	+ .chart-legend{transform:scale(0.75);margin-top:0;}
+}
 
  
 .photo-desc-list {
