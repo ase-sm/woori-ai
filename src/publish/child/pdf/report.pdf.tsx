@@ -1,4 +1,4 @@
-import { Icon } from '@/entities'
+import { Icon, Img } from '@/entities'
 import { LineChart} from '@/features'
 import { useState } from 'react'
 
@@ -59,7 +59,14 @@ const _ = () => {
               <div className='text'>
                 오늘은 재기발랄한  <b>토끼</b> 같았어요
               </div>
-              <Icon type='character-rabbit' ></Icon>
+              <div className="character">
+                <Img src='/images/ico-character-rabbit.svg' alt='' />
+                {/* <Img src='/images/ico-character-koala.svg' alt='' />
+                <Img src='/images/ico-character-sloth.svg' alt='' />
+                <Img src='/images/ico-character-beaver.svg' alt='' />
+                <Img src='/images/ico-character-alpaca.svg' alt='' />
+                <Img src='/images/ico-character-dolphin.svg' alt='' /> */}
+              </div>
             </div>
             <div className='summary-list'>
               <ul>

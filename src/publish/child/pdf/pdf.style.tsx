@@ -44,7 +44,10 @@ export const Contents = styled.div`
 	}
 	.character-wrap {
 		margin-top: 0;
-
+		.character{
+				padding:20px 0;
+			 img{width:auto !important;height:auto !important;}
+		}
 		.text {
 			font-size: 21px; font-weight: 500; color: #383838; text-align: center; margin-bottom: 0;
 
