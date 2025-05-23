@@ -1,6 +1,12 @@
+import { COLOR } from '@/shared'
 import styled from '@emotion/styled'
 
 export const UploadInfo = styled.div`
+	.btn-file-download{height:5.6rem;border-radius:1rem;background:#F5F6FA;display:flex;align-items:center;padding:0 1.5rem;font-weight:500;font-size:1.6rem; color:#111111;
+		+ *{margin-top:2rem;}
+		> span{ flex:1;text-align:left;
+		 em{color:${COLOR.primary};vertical-align:middle;}}
+	}
 	.visual-down-excel{
 		display: flex; justify-content: center; align-items: center; flex-direction: column;
 
@@ -8,7 +14,7 @@ export const UploadInfo = styled.div`
 		.txt {
 			margin-top: 2rem; font-size: 1.6rem; color: #505050; text-align: center;
 
-			em { font-weight: 500; vertical-align: baseline; }
+			em { font-weight: 600; vertical-align: baseline; }
 		}
 	}
 	.upload-files{margin-top:2rem;width:calc(100% - 3.2rem);margin-left:1.6rem; }

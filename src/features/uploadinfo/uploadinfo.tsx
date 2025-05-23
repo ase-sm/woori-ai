@@ -1,9 +1,15 @@
-import { UploadFile } from '@/entities'
+import { UploadFile, Icon, Button } from '@/entities'
 import UploadInfo from './uploadinfo.style'
 
 const _ = ({ file, max, onChange, txt, noti }: any) => {
 	return (
 		<UploadInfo className='hold-wrap'>
+			<Button as='a' to={'/file.zip'} className="btn-file-download">
+				<span><em>{txt} 정보 파일 양식</em> 다운받기</span>
+				<Button className='btn-download'>
+					<Icon type='download'></Icon>
+				</Button>
+			</Button>
 			<div className='visual-down-excel'>
 				<i></i>
 				<div className='txt'>
