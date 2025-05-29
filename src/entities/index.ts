@@ -24,6 +24,7 @@ import UploadPhotoAnalyze from './uploadphotoanalyze'
 import UploadPhotos from './uploadphotos'
 import Photolist from './photolist'
 import Videolist from './videolist'
+import Reportlist from './reportlist'
 
 export {
 	Button,
@@ -59,4 +60,5 @@ export {
 	Videolist,
 	useDialog,
 	useToast,
+	Reportlist
 }

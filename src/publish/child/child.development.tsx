@@ -1,4 +1,4 @@
-import { Button, Img, Icon } from '@/entities'
+import { Button, Img } from '@/entities'
 import { PopSelectClass } from '@/features'
 import { globalStore } from '@/shared'
 import { Footer } from '@/widgets'
@@ -10,7 +10,7 @@ const _ = () => {
 	useEffect(() => {
 		setHeader({
 			type: 'sub',
-			title: 'BI-리포트',
+			title: 'E-발달진단',
 			back: true,
 			menu: true,
 		})
@@ -44,10 +44,10 @@ const _ = () => {
 						</Button>
 					</div>
 
-					<div className='child-info-list st2'>
+					<div className='child-info-list'>
 						<ul>
 							<li>
-								<Button className='box auto'>
+								<button className='box'>
 									<div className='thumb'>
 										<Img src={'/images/temp/temp-profile.png'} alt='' />
 									</div>
@@ -58,11 +58,13 @@ const _ = () => {
 										</div>
 										<div className='parents'>학부모 : 소이현</div>
 									</div>
-								</Button>
-								<Button className='btn-list'><Icon type='list-primary' /><span>목록</span></Button>
+									<div className="completed">
+										<span className="on">미작성</span>
+									</div>
+								</button>
 							</li>
 							<li>
-								<Button className='box auto'>
+								<button className='box'>
 									<div className='thumb'>
 										<Img src={'/images/temp/temp-profile.png'} alt='' />
 									</div>
@@ -71,10 +73,12 @@ const _ = () => {
 											<span>풀입반</span>
 											<b>홍길동</b>
 										</div>
-										<div className='parents'>학부모 : 소이현</div>
+										<div className='parents'>학부모 : Nguyễn Xuân Phúc </div>
 									</div>
-								</Button>
-								<Button className='btn-list'><Icon type='list-primary' /><span>목록</span></Button>
+									<div className="completed">
+										<span className="off">작성완료</span>
+									</div>
+								</button>
 							</li>
 						</ul>
 					</div>
@@ -83,11 +87,6 @@ const _ = () => {
 
 			<PopSelectClass value={selectedClass} data={classList} open={popClass} close={popCloseClass} onChange={setSelectedClass} />
 
-			<Footer className='full-btn'>
-				<Button className='btn-type1 st1'>
-					<span>확인</span>
-				</Button>
-			</Footer>
 		</>
 	)
 }
