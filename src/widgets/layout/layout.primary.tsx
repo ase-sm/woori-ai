@@ -26,7 +26,7 @@ const _ = ({ children }: any) => {
 		<Outerwrap className='outer-wrap'>
 			<Aside />
 			<Wrap className='wrap'>
-				{global.header.type === 'main' && <Header />}
+				{/* {global.header.type === 'main' && <Header />} */}
 				{global.header.type === 'sub' && <HeaderSub title={global.header.title} back={global.header.back} close={global.header.close} menu={global.header.menu} trash={global.header.trash} dotmenu={global.header.dotmenu} />}
 				{children}
 				{global.header.menu && <GnbMenu />}

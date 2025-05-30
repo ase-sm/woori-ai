@@ -60,7 +60,7 @@ const _ = ({ menu }: any) => {
 							<span className='txt'>홈</span>
 						</Button>
 					</li>
-					<li className={menuOn('noti')}>
+					{/* <li className={menuOn('noti')}>
 						<Button className='link' onClick={(e: any) => router.push(ROUTE_PATH['06-01'])}>
 							<span className={`icon ` + (notiNew ? 'new' : null)}>
 								<Icon type='gnb-noti' />
@@ -91,7 +91,15 @@ const _ = ({ menu }: any) => {
 							</span>
 							<span className='txt'>출결</span>
 						</Button>
-					</li>
+					</li> */}
+					<li className={menuOn('my')}>
+						<Button to='/' className="link">
+							<span className='icon'>
+								<Icon type='gnb-my' />
+							</span>
+							<span className='txt'>마이페이지</span>
+						</Button>
+					</li>					
 				</ul>
 			</Menubar>
 		</>

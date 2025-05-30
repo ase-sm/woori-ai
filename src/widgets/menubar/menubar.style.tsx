@@ -22,7 +22,7 @@ ul {
 
 		[class*=ico-gnb] {
 			background: ${MX.src('/images/ico-gnb.svg')} no-repeat 0 0 !important;
-			background-size: auto 12rem !important;
+			background-size: 4.8rem auto !important;
 		}
 
 		.ico-gnb-home{background-position-y:0!important;}
@@ -30,6 +30,7 @@ ul {
 		.ico-gnb-alarm{background-position-y:-4.8rem !important;}
 		.ico-gnb-album{background-position-y:-7.2rem !important;}
 		.ico-gnb-attend{background-position-y:-9.6rem !important;}
+		.ico-gnb-my{background-position-y:-12rem !important;}
 
 		&.on {
 			[class*=ico-] {
