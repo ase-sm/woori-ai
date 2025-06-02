@@ -1,5 +1,6 @@
 import { Button, useToast, Popup, Img, Icon } from '@/entities'
 import { globalStore } from '@/shared'
+import { Footer } from '@/widgets'
 import { useEffect, useState } from 'react'
 import Contents from './child.style'
 
@@ -144,6 +145,12 @@ const _ = () => {
 					</div>
 				</div>
 			</Popup>			
+
+			<Footer className='full-btn'>
+				<Button className='btn-type1 st1'>
+					<span>다음</span>
+				</Button>
+			</Footer>		
 		</>
 	)
 }

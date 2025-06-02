@@ -83,11 +83,6 @@ const _ = () => {
 
 			<PopSelectClass value={selectedClass} data={classList} open={popClass} close={popCloseClass} onChange={setSelectedClass} />
 
-			<Footer className='full-btn'>
-				<Button className='btn-type1 st1'>
-					<span>확인</span>
-				</Button>
-			</Footer>
 		</>
 	)
 }

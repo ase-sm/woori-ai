@@ -1,6 +1,5 @@
 import { Button, Img, TabList, TabPanel, Tabs, Icon, Checkbox } from '@/entities'
 import { BarChart, LineChart, StandardDeviationChart, GageBarChart, DeviationChart, ThumbChart } from '@/features'
-import { PdfReport, PdfReport2, PdfReport3 } from './pdf'
 
 import { globalStore } from '@/shared'
 import { useEffect, useState } from 'react'
@@ -684,11 +683,6 @@ const _ = () => {
 				</div>
 			</div>
 
-			<PdfReport2 />
-			<PdfReport3 />
-			<PdfReport />
-			
-			
 		</Contents>
 	)
 }

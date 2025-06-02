@@ -168,6 +168,7 @@ const PublishingMenuList: Array<MenuProps> = [
 	{ category: 'BI리포트', depth1: '원아리스트', depth2: '', depth3: '', path: '/publish/child/bireport', realpath: '/child/bireport', memo: '' },
 	{ category: '', depth1: '리포트리스트', depth2: '', depth3: '', path: '/publish/child/bireport/list', realpath: '/child/bireport/list', memo: '' },
 	{ category: '', depth1: '상세', depth2: '', depth3: '', path: '/publish/child/bireport/detail', realpath: '/child/bireport/detail', memo: '' },
+	{ category: '', depth1: 'pdf', depth2: '', depth3: '', path: '/publish/child/bireport/pdf', realpath: '/child/bireport/pdf', memo: '' },	
 	{ category: 'E-발달진단', depth1: '원아리스트', depth2: '', depth3: '', path: '/publish/child/development', realpath: '/child/development', memo: '' },
 	{ category: '', depth1: '진단리스트', depth2: '', depth3: '', path: '/publish/child/development/list', realpath: '/child/development/list', memo: '' },
 	{ category: '', depth1: '상세', depth2: '', depth3: '', path: '/publish/child/development/detail', realpath: '/child/development/detail', memo: '' },

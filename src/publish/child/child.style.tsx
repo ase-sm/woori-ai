@@ -200,7 +200,7 @@ export const Contents = styled.div`
 	.photo-desc-list{
 		ul{ display:grid;grid-template-columns: repeat(2, 1fr);grid-gap: 2.4rem 0.8rem;
 			li{
-				.img{${Thumb}height:10.8rem;border-radius:1rem;}
+				.img{${Thumb};height:10.8rem;border-radius:1rem;}
 				.txt{margin-top:0.8rem;font-weight:500;font-size:1.2rem; color:#60637B;}
 				.date{font-size:1.2rem; color:#878AA1;font-weight:400;margin-top:0.4rem;}
 				
