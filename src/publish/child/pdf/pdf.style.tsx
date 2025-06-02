@@ -1,13 +1,11 @@
 import styled from '@emotion/styled'
 
 export const Contents = styled.div`
-	
-	width:794px;margin:0 auto;
-	background:#fff; z-index:100;
+	position:relative;
 
 
 	.c-primary{ color:#4252E2;vertical-align:baseline;}
-
+.bi-reort-pdf-wrap{background:#fff;}
 .report-header {
 	position: relative; padding: 25px 37px 12px; background: #F5F6FA; border-bottom: 1px solid #BDC0D2;
 
@@ -339,20 +337,21 @@ export const Contents = styled.div`
 }
 
 .pdf-frame {
+	width:100%;z-index:50;display:flex;flex-direction:column;
 	.pdf-menu {
 		background: #fff; padding: 0 17px;
-		position: relative; display: flex; align-items: center; background: #F5F6FA; height: 62px;
+		position: relative; display: flex; align-items: center; background: #F5F6FA; height: 62px;min-height:62px;
 		box-shadow: 0px 3px 6.6px 0px #BCBFCF;
 
 		.btn-down-load {
 			border-radius: 6px; 
-			width: 35px;
-			height: 35px; display: flex; justify-content: center; align-items: center; background: #4252E2; box-shadow: 0px 1.1px 2.2px 0px rgba(190, 190, 197, 0.30), 1.1px 3.3px 1.1px 0px rgba(220, 220, 223, 0.15);
+			width: 35px; height: 35px; display: flex; justify-content: center; align-items: center; background: #4252E2; box-shadow: 0px 1.1px 2.2px 0px rgba(190, 190, 197, 0.30), 1.1px 3.3px 1.1px 0px rgba(220, 220, 223, 0.15);
 
 			&:before { content: ''; display: block; width: 19px; height: 19px; background: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_114_881)'%3E%3Cpath d='M15.5 10V12.6667C15.5 13.0203 15.3361 13.3594 15.0444 13.6095C14.7527 13.8595 14.357 14 13.9444 14H3.05556C2.643 14 2.24733 13.8595 1.95561 13.6095C1.66389 13.3594 1.5 13.0203 1.5 12.6667V10' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.16675 5.6665L8.50008 8.99984L11.8334 5.6665' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.5 9V1' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_114_881'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") no-repeat 50% 50%; background-size: auto 100%; }
 		}
+			.left{display:flex;gap:20px;}
 		.paging {
-			position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 9px;
+			display: flex; align-items: center; gap: 9px;
 
 			button, .page {
 				width: 35px; height: 35px; display: block; border-radius: 6px; background: #FFF; box-shadow: 0px 1.1px 2.2px 0px rgba(190, 190, 197, 0.30), 1.1px 3.3px 1.1px 0px rgba(220, 220, 223, 0.15); background-repeat: no-repeat; background-position: 50% 50%; background-size: 19px 18px;
@@ -368,10 +367,16 @@ export const Contents = styled.div`
 				em { color: #4252E2; font-weight: 600; }
 			}
 		}
-		.right { margin-left: auto; }
-		select { display: inline-flex; height: 35px; padding: 0px 11px; align-items: center; gap: 9px; border-radius: 6px; border: 1px solid #ECEEF5; background: #FFF; }
+		.right { margin-left: auto; display:flex;align-items:center;gap:10px;}
+		select { display: inline-flex; -webkit-appearance: none;height: 35px; padding: 0px 11px; align-items: center; gap: 9px; border-radius: 6px; border: 1px solid #ECEEF5;padding-right:35px;background:#fff url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.81088 10.8764C8.41175 11.4295 7.58825 11.4295 7.18912 10.8764L4.8139 7.58521C4.3366 6.92384 4.80917 6 5.62478 6H10.3752C11.1908 6 11.6634 6.92384 11.1861 7.58521L8.81088 10.8764Z' fill='%23383838'/%3E%3C/svg%3E") no-repeat top 50% right 10px;
+			background-size:auto 16px;;
+		}
+		.btn-pdf-close{width: 35px; height: 35px;display: block; border-radius: 6px; background: #FFF; box-shadow: 0px 1.1px 2.2px 0px rgba(190, 190, 197, 0.30), 1.1px 3.3px 1.1px 0px rgba(220, 220, 223, 0.15);
+			background:#fff url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 4L4.5 11.9447' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M12.5 12.001L4.50004 4.00098' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 50% 50%;
+			background-size:auto 16px;
+		}
 	}
-	.pdf-contet { padding: 30px 18px; background: #D4D6E3; }
+	.pdf-contet { padding: 30px 18px; background: #D4D6E3;flex:1; }
 }
 
 
