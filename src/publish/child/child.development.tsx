@@ -1,7 +1,7 @@
 import { Button, Img } from '@/entities'
 import { PopSelectClass } from '@/features'
 import { globalStore } from '@/shared'
-import { Footer } from '@/widgets'
+import { MenuBar } from '@/widgets'
 import { useEffect, useState } from 'react'
 import Contents from './child.style'
 
@@ -12,7 +12,7 @@ const _ = () => {
 			type: 'sub',
 			title: 'E-발달진단',
 			back: true,
-			menu: true,
+			menu: false,
 		})
 	}, [])
 
@@ -86,6 +86,8 @@ const _ = () => {
 			</Contents>
 
 			<PopSelectClass value={selectedClass} data={classList} open={popClass} close={popCloseClass} onChange={setSelectedClass} />
+
+			<MenuBar menu='' />
 
 		</>
 	)

@@ -480,7 +480,7 @@ export const ChildInfoList = `
 
 		.btn-list{
 			display:flex;justify-content:center;align-items:center;width:6.6rem;background:#fff;flex-direction: column;
-			font-weight:500;font-size:1.2rem; color:${COLOR.primary}; border-radius:1rem;border:1px solid #ECEEF5;
+			font-weight:600;font-size:1.2rem; color:${COLOR.primary}; border-radius:1rem;border:1px solid #ECEEF5;
 			> span{display:block;margin-top:0.4rem;}
 		}
 	}

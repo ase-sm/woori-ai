@@ -1,7 +1,7 @@
 import { Button, Img, Icon } from '@/entities'
 import { PopSelectClass } from '@/features'
 import { globalStore } from '@/shared'
-import { Footer } from '@/widgets'
+import { MenuBar } from '@/widgets'
 import { useEffect, useState } from 'react'
 import Contents from './child.style'
 
@@ -12,7 +12,7 @@ const _ = () => {
 			type: 'sub',
 			title: 'BI-리포트',
 			back: true,
-			menu: true,
+			menu: false,
 		})
 	}, [])
 
@@ -83,6 +83,7 @@ const _ = () => {
 
 			<PopSelectClass value={selectedClass} data={classList} open={popClass} close={popCloseClass} onChange={setSelectedClass} />
 
+			<MenuBar menu='' />
 		</>
 	)
 }

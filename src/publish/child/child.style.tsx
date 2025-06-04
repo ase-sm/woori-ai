@@ -225,7 +225,7 @@ export const Contents = styled.div`
 				}
 
 				&.current{ 
-					.description{border-color:${COLOR.primary}}
+					.description{border-color:${COLOR.primary};border-width:2px;}
 				}
 
 				.description{
@@ -248,7 +248,7 @@ export const Contents = styled.div`
 				.menu{
 					display:flex;justify-content:center;align-items:center;
 					height:8.8rem;border-radius:1rem;border:1px solid #ECEEF5;background:#fff; width:6.6rem;
-					 [class*=btn-]{display:flex;justify-content:center;align-items:center; flex-direction:column;gap:0.4rem;
+					 [class*=btn-]{display:flex;justify-content:center;align-items:center; flex-direction:column;gap:0.4rem;font-weight:600;
 						height:100%;width:100%;display:flex;justify-content:center;align-items:center;font-size:1.2rem; color:${COLOR.primary};
 					}
 				}
@@ -295,6 +295,7 @@ export const Contents = styled.div`
 							button{height:2.8rem;display:inline-flex;align-items:center;padding:0 1.2rem;background:#F5F6FA;border-radius:1rem; color:#878AA1;border:1px solid #F5F6FA;
 								&.on{
 									border-color:${COLOR.primary};color:${COLOR.primary};
+									background: rgba(66, 82, 226, 0.1);
 								}
 							}
 						}
