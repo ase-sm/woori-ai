@@ -252,6 +252,8 @@ export const Contents = styled.div`
 						height:100%;width:100%;display:flex;justify-content:center;align-items:center;font-size:1.2rem; color:${COLOR.primary};
 					}
 				}
+
+				.btn-push-alarm > span{font-weight:600;}
 			}
 		}
 	}

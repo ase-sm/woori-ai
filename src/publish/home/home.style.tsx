@@ -12,7 +12,7 @@ const Contents = styled.div`
 				&:before{content:'';display:block;width:1.6rem;height:1.6rem;background:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.51979 6.40126C2.20979 6.68126 2.02979 7.08126 2.02979 7.50126V12.6313C2.02979 13.4513 2.68978 14.1113 3.50978 14.1113H12.4898C13.3098 14.1113 13.9698 13.4513 13.9698 12.6313V7.44126C13.9698 7.02126 13.7898 6.62126 13.4698 6.34126L8.98978 2.37126C8.42978 1.87126 7.57979 1.88126 7.02979 2.37126L2.51979 6.40126Z' stroke='white' stroke-width='1.5' stroke-miterlimit='10'/%3E%3Cpath d='M4.65979 11.1113H11.3398' stroke='white' stroke-width='1.5' stroke-miterlimit='10'/%3E%3C/svg%3E%0A") no-repeat 0 0;background-size:auto 100%;margin-right:0.6rem;}
 			}
 			.user-desc{position:relative;
-				margin-top:2.5rem;
+				margin-top:4rem;
 				.img{ width:3.2rem;height:3.2rem; ${Thumb}; }
 					.desc{margin-top:1rem; color:#fff;
 						> *{display:block;font-size:2rem;}

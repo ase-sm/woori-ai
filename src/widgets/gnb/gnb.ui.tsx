@@ -160,6 +160,19 @@ const _ = () => {
 						</li>
 					)}
 
+					<li>
+						<Button to='/' className="link">
+							<Icon type='menu-my' />
+							<span className='txt'>마이페이지</span>
+						</Button>
+					</li>
+					<li className='line-t bg'>
+						<Button to='/' className="link">
+							<Icon type='menu-photo' />
+							<span className='txt'>사진관리</span>
+						</Button>
+					</li>					
+
 					{/* TODO: QA가 완료된 후에 삭제예정*/}
 					<li>
 						<div style={{ width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
